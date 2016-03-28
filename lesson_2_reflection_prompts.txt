@@ -4,6 +4,12 @@ A working tree is being organised. Git gets itself ready to record changes via t
 You ahve to initialise in the parent folder of the entire project using git init. commit then is 0. no objects in the commit as well. 
 
 How is the staging area different from the working directory and the repository?
+
+Staging area is the container holding all operable files (script files) under git. 
+Repository holds the commits and logs the changes.
+Working directory holds Repository,Staging Area and the other files
+You initialise the Repository. Then you add items into the staging area. Things within this container will have their commits logged.
+
 What value do you think it offers?
 
 How can you use the staging area to make sure you have one commit per logical
