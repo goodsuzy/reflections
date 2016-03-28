@@ -1,0 +1,54 @@
+https://github.com/udacity/asteroids.git
+b0678b161fcf74467ed3a63110557e3d6229cfa6
+3884eab839af1e82c44267484cf2945a766081f3
+
+How did viewing a diff between two versions of a file help you see the bug that
+was introduced?
+
+   It highlights  the differences between the files. Diff on UNIX based. 
+
+How could having easy access to the entire history of a file make you a more
+efficient programmer in the long term?
+
+    I could chnage the direction of where the program needs to go easily and find out exactly where the problem is. 
+
+What do you think are the pros and cons of manually choosing when to create a
+commit, like you do in Git, vs having versions automatically saved, like Google
+docs does?
+
+    1. KNows that you are saving a complete code
+    2. Doesn't require internet access. 
+
+Why do you think some version control systems, like Git, allow saving multiple
+files in one commit, while others, like Google Docs, treat each file separately?
+
+    Git is meant for coding. Doc is not meant for coding- that's why. We need to keep things seperated in Coding for easier implementation of changes or for debugging. 
+    
+How can you use the commands git log and git diff to view the history of files?
+
+    GIT LOG: Shows COMMIT git log commitid1 commitid2
+    GIT DIFF: Shows difference in file VERSION. git diff commitid1 commitid2
+    Diff: Shows difference in 2 files. diff filename1 filename2
+    git log --stat: shows commit title and the number of changes + for addition and - for removal of codes. 
+    q: to get out of seeing the codes.
+    git clone 
+    git config --global color.ui auto
+    Ctrl+Shift+Y and Ctrl+Shift+V (TO copy & paste in GIT)
+    Use Up and Down to scroll the logs
+    git checkout commitID. type this once and run html again. html will use the older ID. note: git log after this process, will only show up to commitID.
+    to create a git respository, go to working directory (folder) with all your files. type "git init". type "ls -a". now the hidden .git repository is shown. #ofcommit=0. use "git add" to add objects/files to the repository for tracking (staging area). 
+    git status: shows the current Head, objects that is tracked and untracked. 
+    git's HEAD= current commit
+    git commit to write a commit
+
+How might using version control make you more confident to make changes that
+could break something?
+
+    Fill in your answer here
+
+Now that you have your workspace set up, what do you want to try using Git for?
+
+    Fill in your answer here
+
+OPERATES ON, PART OF, TYPE OF
+ONE COMMIT PER LOGIC CHANGE
