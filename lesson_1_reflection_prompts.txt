@@ -27,7 +27,11 @@ files in one commit, while others, like Google Docs, treat each file separately?
 How can you use the commands git log and git diff to view the history of files?
 
     GIT LOG: Shows COMMIT git log commitid1 commitid2
-    GIT DIFF: Shows difference in file VERSION. git diff commitid1 commitid2
+    GIT DIFF: Shows difference in file VERSION. 
+    git diff commitid1 commitid2 (compares saved Jpeg 1 and saved Jpeg 2- may not be LAST saved jpeg)
+    git diff with no arguments: compares current * and staging area's version. (compares PSD file to current existing Jpeg)
+    git diff --staged: compares staging area & last commit. (current jpeg vs last saved jpeg)
+    
     Diff: Shows difference in 2 files. diff filename1 filename2
     git log --stat: shows commit title and the number of changes + for addition and - for removal of codes. 
     q: to get out of seeing the codes.

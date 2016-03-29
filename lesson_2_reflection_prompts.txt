@@ -5,23 +5,51 @@ You ahve to initialise in the parent folder of the entire project using git init
 
 How is the staging area different from the working directory and the repository?
 
-Staging area is the container holding all operable files (script files) under git. 
-Repository holds the commits and logs the changes.
-Working directory holds Repository,Staging Area and the other files
-You initialise the Repository. Then you add items into the staging area. Things within this container will have their commits logged.
+Working directory= product (PSD file)
+Staging area= snapshot of the product currently. (current Jpeg file)
+Repository= collection of snapshots (Folder of saved Jpeg files. when commited, a current jpeg= saved jpeg)
 
 What value do you think it offers?
 
 How can you use the staging area to make sure you have one commit per logical
 change?
 
+Stage one file at a time 
+
 What are some situations when branches would be helpful in keeping your history
 organized? How would branches help?
+
+Branch help you explore options. 
+
+git branch: shows all branches in repository
+git branch N: adds a branch named N
+git checkout N: Literally checks out N. Brings you to branch N. 
+You have to Create a Branch first; it will clone Master.
+Then you go to THAT branch and use that stage and commit changes there.
+git log --graph --oneline branch1 branch2: shows the branch/ structure of git. oneline makes it easier to read.
+imagine each commit as node, every branch depicts a node branch off. consider reachability 
+git log -n 1: shows no. of commit=1;
 
 How do the diagrams help you visualize the branch structure?
 
 What is the result of merging two branches together? Why do we represent it in
 the diagram the way we do?
+
+Merging 2 brnaches together allows the combination of functions into GIT. Allows exploration of ideas and collaboration. 
+Using diagram is a easy visualisation of the tree. 
+
+Merge rules:
+#1 compare both parties and original. 
+M if both parties have it. 
+M if any of the lines are not in original. 
+DNM if party remove line from original
+git merge Master branch: branch is merged into master. It will ALSO merge currently checkout branch! 
+git show commitID: shows git diff against the previous commit in the parent /same branch
+git branch -d N: deletes N. but it's okay, master remembers it. 
+git merge --abort : Restore your files to their state before you started the merge by running 
+merge conflicts can happen due to windows/others syntax. get windows guy to  config their git.
+merge conflict can alos happen due to diff in version in lines: open file and go find it. edit and keep the file you want. once resolved, add it to staging area-but you need to commit.
+
 
 What are the pros and cons of Git’s automatic merging vs. always doing merges
 manually?
